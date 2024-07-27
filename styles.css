@@ -390,6 +390,7 @@ p {
     color: var(--background);
     font-family: var(--headingFont);
     font-size: 1.5rem;
+    border-bottom: solid 1px var(--accent);
 }
 .right p{
     text-align: left;
