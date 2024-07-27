@@ -331,8 +331,7 @@ p {
 .contactWrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     padding-bottom: 3%;
 }
 
@@ -342,12 +341,11 @@ p {
         'name nameInput'
         'email emailInput'
         'message message'
-        'message message'
     ;
-    padding: 50px;
-
-    
-
+    padding: 5%;
+    border-radius: 5%;
+    background-color: var(--textColor);
+    color: var(--background);
 }
 
 .left .name {
@@ -372,28 +370,53 @@ p {
 
 .left .message {
     grid-area: message;
-    height: 80px;
 }
+
+.left input, label{
+    margin-bottom: 4%;
+    height: 20px;
+}
+
+.left .submit{
+    height: 40px;
+    width: 80px;
+    text-transform: uppercase;
+    background-color: var(--background);
+    border: 3px solid var(--accent);
+    color: var(--accent);
+    border-radius: 20%;
+    
+}
+
+.left .submit:hover{
+    background-color: var(--accent);
+    border-color: var(--background);
+    color: var(--background);
+}
+
+
+
 
 .contactWrapper .right{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--background);
-    background-color: var(--textColor);
-    padding: 5%;
+    border-radius: 5%;
+    padding: 50px;
+    height: 100%;
 }
 
 .right h3{
     text-align: center;
     margin-bottom: 12%;
-    color: var(--background);
+    color: var(--accent);
     font-family: var(--headingFont);
-    font-size: 1.5rem;
-    border-bottom: solid 1px var(--background);
+    font-size: 2rem;
+    border-bottom: solid 1px var(--accent);
 }
 .right p{
     text-align: left;
+    font-size: 1.25rem;
 }
 
 
@@ -415,4 +438,13 @@ p {
 
 .hobby p {
     color: var(--textColor);
+}
+
+@media only screen and (max-width:914px){
+    #education .degreesBox{
+        flex-direction: column;
+    }
+    #resume .skillsBox{
+        grid-template-columns: auto;
+    }
 }
