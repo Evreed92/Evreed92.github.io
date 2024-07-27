@@ -1,0 +1,417 @@
+/*
+    Font styles (linked in Meta of index.html)
+        Epilogue - General Text
+        Philosopher - Headings and Titles
+*/
+
+:root {
+    /*oxford-blue*/
+    --background: #102542ff;
+    /*bittersweet*/
+    --accent: #f87060ff;
+    /*platinum*/
+    --textColor: #cdd7d6ff;
+    /*TextFont string*/
+    --textFont: Epilogue, san-serif;
+    /*HeadingFont string*/
+    --headingFont: Philosopher, serif;
+}
+
+/*General and Universal Styles*/
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--textColor);
+    font-family: var(--textFont);
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--headingFont), serif;
+    font-size: 3rem;
+    margin: 6% 0 6% 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*Header Styles*/
+/*Nav Styles*/
+header {
+    margin: 0 20%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 25px 0px;
+}
+
+nav a {
+
+    color: var(--textColor);
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/*Hero Styles*/
+.heroWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 5% 0;
+    border-bottom: solid var(--accent) 3px;
+    padding-bottom: 20px;
+    height: 400px;
+}
+
+.heroText {
+    margin: 0 0 0 35%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+em {
+    color: var(--accent);
+    font-family: var(--headingFont);
+    font-size: 2.2rem;
+    margin: 2%;
+}
+
+.heroText p {
+    margin-bottom: 1%;
+}
+
+.heroText a {
+    background-color: var(--background);
+    color: var(--textColor);
+    padding: 10px;
+    border: solid var(--accent) 3px;
+    border-radius: 5%;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.heroText .spacing {
+    margin-bottom: 15px;
+}
+
+.heroText a:hover {
+    color: var(--background);
+    background-color: var(--textColor);
+    border-color: var(--textColor);
+}
+
+.heroWrapper img {
+    margin: 0 20% 0 0;
+    border: 8px solid var(--accent);
+}
+
+.headshot {
+    border-radius: 50%;
+}
+
+.heroWrapper img {
+    height: 250px;
+}
+
+/*About Styles*/
+#about {
+    margin: 0 20%;
+    padding-bottom: 1%;
+    border-bottom: solid var(--accent) 3px;
+}
+
+#about h3 {
+    margin: 10% 0 10% 0;
+    color: var(--accent);
+    font-size: 2rem;
+}
+
+#about p {
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+    margin: 2% 8% 5% 8%;
+}
+
+
+/*Education Styles*/
+#education {
+    margin: 0 20% 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    border-bottom: solid 3px var(--accent);
+}
+
+#education h2 {
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+.degreesBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.degree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 2%;
+    padding: 4%;
+    height: 140px;
+    width: 300px;
+    border: solid var(--accent) 1px;
+}
+
+.degree h3 {
+    color: var(--accent);
+    margin: 8% 0;
+}
+
+.degree p {
+    margin: 2% 0;
+}
+
+.classesBox {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.class {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    height: 90px;
+    width: 120px;
+    background-color: var(--accent);
+    color: var(--background);
+    border: solid 4px var(--textColor);
+    border-radius: 20%;
+    padding: 3%;
+    margin: 2%;
+}
+
+.class p {
+    margin-top: auto;
+}
+
+/*Resume Styles*/
+#resume {
+    margin: 0 20%;
+    border-bottom: solid 3px var(--accent);
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume h1 {
+    margin-bottom: 3%;
+}
+
+#resume h2 {
+    margin: 3%;
+}
+
+.jobsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: dotted 1px var(--textColor);
+    margin-bottom: 2%;
+    width: 35%;
+    padding: 1.5%;
+}
+
+.job {
+    width: 60%;
+    padding: 2%;
+    text-align: center;
+}
+
+.job p {
+    color: var(--accent);
+}
+
+.job h3,
+p {
+    margin-bottom: 1.2%;
+}
+
+.skillsBox {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.skill {
+    width: 80%;
+}
+
+.skill h3 {
+    border-bottom: solid 1px var(--accent);
+    font-size: 1rem;
+}
+
+.skill p {
+    margin: 8px;
+    width: 250px;
+    text-align: right;
+    color: var(--accent);
+    text-wrap: wrap;
+}
+
+/*Project Styles*/
+#projects {
+    border-bottom: solid 3px var(--accent);
+    margin: 0 20% 0 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%;
+    text-align: center;
+    justify-items: center;
+}
+
+#projects h1 {
+    margin: 5%;
+}
+
+#projects a {
+    display: flex;
+    margin: 5%;
+    background-color: var(--accent);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px var(--accent);
+}
+
+#projects a:hover {
+    background-color: var(--textColor);
+}
+
+#projects img {
+    width: 100%;
+}
+
+/*Contact Form Styles*/
+#contact {
+    border-bottom: solid 3px var(--accent);
+    margin: 0 20% 0 20%;
+}
+
+.contactWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+.contactWrapper .left {
+    display: grid;
+    grid-template-areas:
+        'name nameInput'
+        'email emailInput'
+        'message message'
+        'message message'
+    ;
+    padding: 50px;
+
+    
+
+}
+
+.left .name {
+    grid-area: name;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.left .nameInput {
+    grid-area: nameInput;
+}
+
+.left .email {
+    grid-area: email;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.left .emailInput {
+    grid-area: emailInput;
+}
+
+.left .message {
+    grid-area: message;
+    height: 80px;
+}
+
+.contactWrapper .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--background);
+    background-color: var(--textColor);
+    padding: 5%;
+}
+
+.right h3{
+    text-align: center;
+    margin-bottom: 12%;
+    color: var(--background);
+    font-family: var(--headingFont);
+    font-size: 1.5rem;
+}
+.right p{
+    text-align: left;
+}
+
+
+/*Hobbies Styles*/
+#hobbies {
+    margin-bottom: 100px;
+}
+
+#hobbies h1 {
+    margin: 1% 0 1% 0;
+}
+
+.hobbiesBox {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.hobby p {
+    color: var(--textColor);
+}
